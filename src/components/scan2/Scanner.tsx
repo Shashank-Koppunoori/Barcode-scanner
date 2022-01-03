@@ -17,6 +17,7 @@ const Scanner = () =>{
         fileScan && setFileScanner(false);
         setShowScanner(!showScanner);
         error && setError("");
+        startFileScan && setStartFileScanner(false);
     }
     const updateScannigStatus = (status: boolean) => {
         setScanning(status);
@@ -54,6 +55,10 @@ const Scanner = () =>{
             fileReader.readAsDataURL(fileToLoad);
           }
     }
+    const onInputClick = ( event: React.MouseEvent<HTMLInputElement, MouseEvent>) => {
+        const element = event.target as HTMLInputElement
+        element.value = ''
+    }
     return (
         <div className="center-div" style={{position:"relative"}}>
             <div style={{position:"fixed", bottom:10, display:"flex", gap:"16px"}}>
@@ -66,7 +71,7 @@ const Scanner = () =>{
                         <Image className="block" src="/images/gallery.svg" height="18px" width="18px" alt="upload" />
                         &nbsp;&nbsp;UPLOAD
                     </label>
-                    <input id="inputFileToLoad" type="file" onChange={encodeImageFileAsURL} accept=".jpg, .jpeg" hidden/>
+                    <input id="inputFileToLoad" type="file" onClick={onInputClick} onChange={encodeImageFileAsURL} accept=".jpg, .jpeg" hidden/>
                 </>
             </div>
             <div className="scanner-container">

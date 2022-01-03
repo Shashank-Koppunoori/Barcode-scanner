@@ -1,6 +1,19 @@
-This is a Barcode scanner app developed in [Next.js](https://nextjs.org/)
+This is a Barcode scanner app developed in [Next.js](https://nextjs.org/). This app can scan the EAN 13 barcode for live stream and local files.
 
 This app is uses [Quagga package](https://www.npmjs.com/package/quagga) for barcode detection and scanning.
+
+This package suppports 
+* code_128_reader (default)
+* ean_reader
+* ean_8_reader
+* code_39_reader
+* code_39_vin_reader
+* codabar_reader
+* upc_reader
+* upc_e_reader
+* i2of5_reader
+* 2of5_reader
+* code_93_reader
 
 
 ## Getting Started
