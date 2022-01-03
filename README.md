@@ -1,4 +1,7 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a Barcode scanner app developed in [Next.js](https://nextjs.org/)
+
+This app is uses [Quagga package](https://www.npmjs.com/package/quagga) for barcode detection and scanning.
+
 
 ## Getting Started
 
