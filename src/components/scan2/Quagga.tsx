@@ -69,7 +69,7 @@ const QuaggaScanner =({onCodeDetection, onError, scanStatus}:QuaggaScannerTypes)
                         "ean_reader"
                     ],
                 },
-                locate: true,
+                locate: false,
             },
             function(err: any) {
                 if (err) {
