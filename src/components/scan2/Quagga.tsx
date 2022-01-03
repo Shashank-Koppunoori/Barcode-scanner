@@ -41,7 +41,7 @@ const QuaggaScanner =({onCodeDetection, onError, scanStatus}:QuaggaScannerTypes)
                     type: 'LiveStream',
                     constraints: {
                         width: 280,
-                        height: 240,
+                        height: 200,
                         facingMode: 'environment', // or user
                     },
                     area: { // defines rectangle of the detection/localization area
@@ -69,7 +69,7 @@ const QuaggaScanner =({onCodeDetection, onError, scanStatus}:QuaggaScannerTypes)
                         "ean_reader"
                     ],
                 },
-                locate: false,
+                locate: true,
             },
             function(err: any) {
                 if (err) {
