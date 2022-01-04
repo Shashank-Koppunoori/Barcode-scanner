@@ -48,7 +48,7 @@ a {
   position: relative;
   margin: 16px 0px;
   margin-top: 10%;
-  height: 344px;
+  height: 274px;
   width: 90%;
 }
 .scanner-div p::before {
@@ -99,6 +99,7 @@ a {
   height: 45px;
   border-style: solid;
   border-width: 0px;
+  z-index: 1;
 }
 .scanner-div:before {
   left: 14px;
