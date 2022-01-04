@@ -48,7 +48,7 @@ a {
   position: relative;
   margin: 16px 0px;
   margin-top: 10%;
-  height: 244px;
+  height: 344px;
   width: 90%;
 }
 .scanner-div p::before {
@@ -64,17 +64,14 @@ a {
 .scanner-div p {
   color: #18c89b;
   position: absolute;
-  bottom: -40px;
-  left: 38%;
+  bottom: -3px;
+  left: 43%;
   font-size: 12px;
   font-weight: 600;
   animation: blinker 1.5s linear infinite;
   font-family: sans-serif;
   text-transform: uppercase;
-}
-.scanner-div1{
-  padding: 0px;
-  margin: 0px;
+  z-index: 1000;
 }
 .scanner-div span {
   position: absolute;
