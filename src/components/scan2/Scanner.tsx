@@ -60,7 +60,7 @@ const Scanner = () =>{
         element.value = ''
     }
     return (
-        <div className="center-div" style={{position:"relative"}}>
+        <div className="center-div" style={{width: "100%", position:"relative", overflow:"hidden"}}>
             <div style={{position:"fixed", bottom:10, display:"flex", gap:"16px"}}>
                 <button className="btn" onClick={toogleShowScanner}>
                     <Image src="/images/scan.svg" height="18px" width="18px" alt="upload" />
@@ -74,7 +74,7 @@ const Scanner = () =>{
                     <input id="inputFileToLoad" type="file" onClick={onInputClick} onChange={encodeImageFileAsURL} accept=".jpg, .jpeg" hidden/>
                 </>
             </div>
-            <div className="scanner-container">
+            <div className="scanner-container" style={{width:"100%"}}>
                 <div className="scanner-div">
                     {showScanner && !fileScan &&
                     <>
@@ -107,11 +107,12 @@ const Scanner = () =>{
                 <div style={{padding:"4px 6px", fontWeight:"bold"}}><Image src="/images/copy.svg" height="24px" width="24px" alt="copy" /></div>
             </div>}
             {startFileScan && 
+            
                 <QuaggaImageScanner 
                     onCodeDetection={codeDetected} 
                     onError={handleError}
                     imgSrc={imgSrc as string} 
-                />
+                />   
             }
         </div>
     )

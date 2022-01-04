@@ -40,7 +40,7 @@ const QuaggaScanner =({onCodeDetection, onError, scanStatus}:QuaggaScannerTypes)
                 inputStream: {
                     type: 'LiveStream',
                     constraints: {
-                        width: window.innerWidth-40,
+                        width: window.innerWidth,
                         height: 240,
                         facingMode: 'environment', // or user
                     },
