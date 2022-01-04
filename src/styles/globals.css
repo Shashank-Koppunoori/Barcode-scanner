@@ -34,8 +34,10 @@ a {
   gap:16px;
 }
 .img-wrapper {
-  padding:4px 6px;
-  font-weight:bold;
+  padding-top:24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
 }
 .center-div{
   position: relative;
@@ -172,9 +174,6 @@ a {
   width: 180px;
   font-size: 14px;
   text-align: center;
-}
-.img-wrapper{
-  padding: 8px;
 }
 .block{
   display: block;

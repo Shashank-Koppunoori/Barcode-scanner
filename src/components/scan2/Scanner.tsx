@@ -97,7 +97,7 @@ const Scanner = () =>{
                 {
                     !showScanner && fileScan && imgSrc &&
                     <div className="img-wrapper">
-                        <Image src={imgSrc as string} alt="Scanned image" height="240" width="280"/>
+                        <Image src={imgSrc as string} alt="Scanned image" height="220" width="300"/>
                     </div>
                 }
             </div>
