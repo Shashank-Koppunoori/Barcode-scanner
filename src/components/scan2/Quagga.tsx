@@ -41,8 +41,9 @@ const QuaggaScanner =({onCodeDetection, onError, scanStatus}:QuaggaScannerTypes)
                     type: 'LiveStream',
                     constraints: {
                         width: window.innerWidth,
-                        height: 240,
+                        height: window.innerHeight-100,
                         facingMode: 'environment', // or user
+                        aspectRatio: {min: 1, max: 100}
                     },
                     area: { // defines rectangle of the detection/localization area
                         top: "0%",    // top offset

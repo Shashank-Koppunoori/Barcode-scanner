@@ -61,7 +61,7 @@ const Scanner = () =>{
     }
     return (
         <div className="center-div" style={{width: "100%", position:"relative", overflow:"hidden"}}>
-            <div style={{position:"fixed", bottom:10, display:"flex", gap:"16px"}}>
+            <div style={{position:"fixed", bottom:10, display:"flex", gap:"16px", zIndex:2000}}>
                 <button className="btn" onClick={toogleShowScanner}>
                     <Image src="/images/scan.svg" height="18px" width="18px" alt="upload" />
                     &nbsp;&nbsp;{showScanner ? "STOP" : "SCAN" }
