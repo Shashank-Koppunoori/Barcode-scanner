@@ -30,10 +30,10 @@ a {
 }
 .scanner-container{
   position: relative;
-  margin: 16px;
+  margin: 16px 0px;
   margin-top: 20%;
   height: 204px;
-  width: 284px;
+  width: 90vw;
 }
 .scanner-div p::before {
   content: '';
