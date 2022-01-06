@@ -83,13 +83,13 @@ const Scanner = () =>{
                             onError={handleError}
                             scanStatus={updateScannigStatus}
                         />
-                        {
+                        {/* {
                         scanning &&  
                         <>
                             <p>Scanning</p>
                             <span></span>
                         </>
-                        }
+                        } */}
                     </>
                     }
                     <em></em>

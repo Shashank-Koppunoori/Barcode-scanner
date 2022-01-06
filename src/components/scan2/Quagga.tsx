@@ -41,7 +41,7 @@ const QuaggaScanner =({onCodeDetection, onError, scanStatus}:QuaggaScannerTypes)
                     type: 'LiveStream',
                     constraints: {
                         // width: window.innerWidth,
-                        // height: window.innerHeight-100,
+                        height: window.innerHeight,
                         facingMode: 'environment', // or user
                         aspectRatio: {min: 1, max: 100}
                     },
