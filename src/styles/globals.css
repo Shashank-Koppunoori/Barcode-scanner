@@ -48,9 +48,9 @@ a {
 }
 .scanner-container{
   position: relative;
-  margin: 16px 0px;
-  margin-top: 10%;
-  height: 274px;
+  /* margin: 16px 0px; */
+  /* margin-top: 10%; */
+  height: 100%;
   width: 90%;
 }
 .scanner-div p::before {
