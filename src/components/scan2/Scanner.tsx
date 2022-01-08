@@ -75,10 +75,9 @@ const Scanner = () =>{
                 </>
             </div>
             <div className="scanner-container" style={{width:"100%"}}>
+            {showScanner && !fileScan &&
                 <div className="scanner-div">
-                    {showScanner && !fileScan &&
-                    <>
-                        <QuaggaScanner 
+                   <QuaggaScanner 
                             onCodeDetection={codeDetected} 
                             onError={handleError}
                             scanStatus={updateScannigStatus}
@@ -90,10 +89,11 @@ const Scanner = () =>{
                             <span></span>
                         </>
                         } */}
-                    </>
-                    }
+                   
+                  
                     <em></em>
                 </div>
+                }
                 {
                     !showScanner && fileScan && imgSrc &&
                     <div className="img-wrapper">
