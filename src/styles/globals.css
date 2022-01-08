@@ -66,11 +66,11 @@ a {
 .scanner-div p {
   color: #18c89b;
   position: absolute;
-  bottom: -3px;
+  bottom: 14px;
   left: 43%;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
-  animation: blinker 1.5s linear infinite;
+  animation: blinker 1s linear infinite;
   font-family: sans-serif;
   text-transform: uppercase;
   z-index: 1000;
@@ -78,9 +78,9 @@ a {
 .scanner-div span {
   position: absolute;
   left: 30px;
-  top: 5px;
+  top: 16%;
   width: 5px;
-  height: 95%;
+  height: 68%;
   background-color: #18c89b;
   box-shadow: 0 0 10px 1px #18c89b,
               0 0 1px 1px #18c89b;
@@ -105,28 +105,28 @@ a {
 }
 .scanner-div:before {
   left: 14px;
-  top: 14px;
+  top: 14%;
   border-left-width: 5px;
   border-top-width: 5px;
   border-radius: 5px 0 0 0;
 }
 .scanner-div:after {
   right: 14px;
-  top: 14px;
+  top: 14%;
   border-right-width: 5px;
   border-top-width: 5px;
   border-radius: 0 5px 0 0;
 }
 .scanner-div em:before {
   left: 14px;
-  bottom: 14px;
+  bottom: 14%;
   border-left-width: 5px;
   border-bottom-width: 5px;
   border-radius: 0 0 0 5px;
 }
 .scanner-div em:after {
   right: 14px;
-  bottom: 14px;
+  bottom: 14%;
   border-right-width: 5px;
   border-bottom-width: 5px;
   border-radius: 0 0 5px 0;
